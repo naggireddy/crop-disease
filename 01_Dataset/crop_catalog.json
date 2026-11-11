@@ -1,0 +1,927 @@
+{
+  "catalog_version": "1.0.0",
+  "total_crops": 20,
+  "description": "Centralized 20-crop disease catalog and taxonomy for crop disease diagnosis system.",
+  "canonical_label_format": "crop__disease",
+  "crops": [
+    {
+      "crop_id": "rice",
+      "common_name": "Rice",
+      "scientific_name": "Oryza sativa",
+      "family": "Poaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "bacterial_leaf_blight",
+          "canonical_label": "rice__bacterial_leaf_blight",
+          "display_name": "Bacterial Leaf Blight",
+          "pathogen": "Xanthomonas oryzae pv. oryzae",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Water-soaked to yellowish-white stripes along leaf margins, wilting in seedlings."
+        },
+        {
+          "disease_id": "brown_spot",
+          "canonical_label": "rice__brown_spot",
+          "display_name": "Brown Spot",
+          "pathogen": "Bipolaris oryzae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Oval, brown leaf spots with gray or whitish centers and yellow halo."
+        },
+        {
+          "disease_id": "leaf_blast",
+          "canonical_label": "rice__leaf_blast",
+          "display_name": "Leaf Blast",
+          "pathogen": "Magnaporthe oryzae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Spindle-shaped lesions with gray-white centers and dark brown margins."
+        },
+        {
+          "disease_id": "sheath_blight",
+          "canonical_label": "rice__sheath_blight",
+          "display_name": "Sheath Blight",
+          "pathogen": "Rhizoctonia solani",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Greenish-gray, oval or irregular spots on leaf sheaths near water line."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "rice__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Normal vibrant green leaves without lesions or chlorosis."
+        }
+      ]
+    },
+    {
+      "crop_id": "wheat",
+      "common_name": "Wheat",
+      "scientific_name": "Triticum aestivum",
+      "family": "Poaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "stripe_rust",
+          "canonical_label": "wheat__stripe_rust",
+          "display_name": "Stripe Rust (Yellow Rust)",
+          "pathogen": "Puccinia striiformis f. sp. tritici",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Yellowish-orange pustules arranged in prominent linear stripes along leaf veins."
+        },
+        {
+          "disease_id": "leaf_rust",
+          "canonical_label": "wheat__leaf_rust",
+          "display_name": "Leaf Rust (Brown Rust)",
+          "pathogen": "Puccinia triticina",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Small, round to oval orange-brown pustules scattered across the upper leaf surface."
+        },
+        {
+          "disease_id": "powdery_mildew",
+          "canonical_label": "wheat__powdery_mildew",
+          "display_name": "Powdery Mildew",
+          "pathogen": "Blumeria graminis f. sp. tritici",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "White to grayish-white powdery patches on leaves and stems."
+        },
+        {
+          "disease_id": "septoria_leaf_blight",
+          "canonical_label": "wheat__septoria_leaf_blight",
+          "display_name": "Septoria Leaf Blight",
+          "pathogen": "Zymoseptoria tritici",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Brown rectangular lesions with tiny black fruiting bodies (pycnidia)."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "wheat__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Uniform green foliage free of fungal pustules or necrotic lesions."
+        }
+      ]
+    },
+    {
+      "crop_id": "maize",
+      "common_name": "Maize",
+      "scientific_name": "Zea mays",
+      "family": "Poaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "common_rust",
+          "canonical_label": "maize__common_rust",
+          "display_name": "Common Rust",
+          "pathogen": "Puccinia sorghi",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Golden-brown to cinnamon powdery pustules on both upper and lower leaf surfaces."
+        },
+        {
+          "disease_id": "northern_leaf_blight",
+          "canonical_label": "maize__northern_leaf_blight",
+          "display_name": "Northern Leaf Blight",
+          "pathogen": "Exserohilum turcicum",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Cigar-shaped grayish-green to tan lesions extending 2.5 to 15 cm along leaves."
+        },
+        {
+          "disease_id": "gray_leaf_spot",
+          "canonical_label": "maize__gray_leaf_spot",
+          "display_name": "Gray Leaf Spot",
+          "pathogen": "Cercospora zeae-maydis",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Rectangular, vein-delimited tan-to-gray necrotic lesions."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "maize__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Vigorous, dark green corn leaves without streaking or pustules."
+        }
+      ]
+    },
+    {
+      "crop_id": "cotton",
+      "common_name": "Cotton",
+      "scientific_name": "Gossypium hirsutum",
+      "family": "Malvaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "bacterial_blight",
+          "canonical_label": "cotton__bacterial_blight",
+          "display_name": "Bacterial Blight (Angular Leaf Spot)",
+          "pathogen": "Xanthomonas citri subsp. malvacearum",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Angular, water-soaked lesions bounded by leaf veins turning dark brown to black."
+        },
+        {
+          "disease_id": "leaf_curl_virus",
+          "canonical_label": "cotton__leaf_curl_virus",
+          "display_name": "Cotton Leaf Curl Virus (CLCuV)",
+          "pathogen": "Cotton leaf curl virus (Begomovirus)",
+          "pathogen_type": "viral",
+          "is_healthy": false,
+          "symptoms": "Upward or downward leaf curling, vein thickening, and leaf enations on undersides."
+        },
+        {
+          "disease_id": "target_spot",
+          "canonical_label": "cotton__target_spot",
+          "display_name": "Target Spot",
+          "pathogen": "Corynespora cassiicola",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Circular brown lesions with distinctive concentric rings mimicking a bullseye."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "cotton__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Broad, green lobed cotton leaves free of curl or vein thickening."
+        }
+      ]
+    },
+    {
+      "crop_id": "tomato",
+      "common_name": "Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "family": "Solanaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "early_blight",
+          "canonical_label": "tomato__early_blight",
+          "display_name": "Early Blight",
+          "pathogen": "Alternaria solani",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Concentric target-like brown rings on older foliage surrounded by chlorotic halo."
+        },
+        {
+          "disease_id": "late_blight",
+          "canonical_label": "tomato__late_blight",
+          "display_name": "Late Blight",
+          "pathogen": "Phytophthora infestans",
+          "pathogen_type": "oomycete",
+          "is_healthy": false,
+          "symptoms": "Large, dark water-soaked lesions rapidly turning black, with white fungal growth on undersides."
+        },
+        {
+          "disease_id": "leaf_mold",
+          "canonical_label": "tomato__leaf_mold",
+          "display_name": "Leaf Mold",
+          "pathogen": "Passalora fulva",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Pale greenish-yellow spots on upper leaf surfaces and velvety olive-green mold underneath."
+        },
+        {
+          "disease_id": "bacterial_spot",
+          "canonical_label": "tomato__bacterial_spot",
+          "display_name": "Bacterial Spot",
+          "pathogen": "Xanthomonas vesicatoria",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Small, dark, water-soaked circular spots often with yellow borders on leaves and stems."
+        },
+        {
+          "disease_id": "septoria_leaf_spot",
+          "canonical_label": "tomato__septoria_leaf_spot",
+          "display_name": "Septoria Leaf Spot",
+          "pathogen": "Septoria lycopersici",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Numerous small circular spots with gray centers and dark brown borders."
+        },
+        {
+          "disease_id": "yellow_leaf_curl_virus",
+          "canonical_label": "tomato__yellow_leaf_curl_virus",
+          "display_name": "Yellow Leaf Curl Virus",
+          "pathogen": "Tomato yellow leaf curl virus (TYLCV)",
+          "pathogen_type": "viral",
+          "is_healthy": false,
+          "symptoms": "Upward curling of leaf margins, severe stunting, and prominent interveinal chlorosis."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "tomato__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Lush compound green leaves with uniform coloration."
+        }
+      ]
+    },
+    {
+      "crop_id": "potato",
+      "common_name": "Potato",
+      "scientific_name": "Solanum tuberosum",
+      "family": "Solanaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "early_blight",
+          "canonical_label": "potato__early_blight",
+          "display_name": "Early Blight",
+          "pathogen": "Alternaria solani",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Dark brown circular spots with characteristic concentric rings on lower leaves."
+        },
+        {
+          "disease_id": "late_blight",
+          "canonical_label": "potato__late_blight",
+          "display_name": "Late Blight",
+          "pathogen": "Phytophthora infestans",
+          "pathogen_type": "oomycete",
+          "is_healthy": false,
+          "symptoms": "Irregular dark water-soaked patches that rapidly expand and rot leaves in cool humid weather."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "potato__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Crisp green potato foliage without necrosis or mildew."
+        }
+      ]
+    },
+    {
+      "crop_id": "chilli",
+      "common_name": "Chilli",
+      "scientific_name": "Capsicum annuum",
+      "family": "Solanaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "anthracnose",
+          "canonical_label": "chilli__anthracnose",
+          "display_name": "Anthracnose / Dieback",
+          "pathogen": "Colletotrichum capsici",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Sunken circular spots with concentric rings of acervuli and twig dieback."
+        },
+        {
+          "disease_id": "leaf_curl",
+          "canonical_label": "chilli__leaf_curl",
+          "display_name": "Chilli Leaf Curl Virus",
+          "pathogen": "Chilli leaf curl virus",
+          "pathogen_type": "viral",
+          "is_healthy": false,
+          "symptoms": "Upward curling and puckering of leaves, shortened internodes, and stunting."
+        },
+        {
+          "disease_id": "bacterial_spot",
+          "canonical_label": "chilli__bacterial_spot",
+          "display_name": "Bacterial Spot",
+          "pathogen": "Xanthomonas euvesicatoria",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Small yellowish-green spots turning dark brown with greasy margins."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "chilli__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Clean, smooth green chilli leaves and vigorous stems."
+        }
+      ]
+    },
+    {
+      "crop_id": "grape",
+      "common_name": "Grape",
+      "scientific_name": "Vitis vinifera",
+      "family": "Vitaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "black_rot",
+          "canonical_label": "grape__black_rot",
+          "display_name": "Black Rot",
+          "pathogen": "Guignardia bidwellii",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Reddish-brown circular spots with dark margins and tiny black pycnidia on leaves."
+        },
+        {
+          "disease_id": "esca_black_measles",
+          "canonical_label": "grape__esca_black_measles",
+          "display_name": "Esca (Black Measles)",
+          "pathogen": "Phaeomoniella chlamydospora & Phaeoacremonium minimum",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Tiger-stripe interveinal necrosis and chlorosis on leaves; dark spots on fruit."
+        },
+        {
+          "disease_id": "leaf_blight",
+          "canonical_label": "grape__leaf_blight",
+          "display_name": "Leaf Blight (Isariopsis Cladosporioides)",
+          "pathogen": "Pseudocercospora vitis",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Irregular dark brown patches on leaf surface causing premature defoliation."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "grape__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Vigorous palmately lobed green vine leaves."
+        }
+      ]
+    },
+    {
+      "crop_id": "apple",
+      "common_name": "Apple",
+      "scientific_name": "Malus domestica",
+      "family": "Rosaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "apple_scab",
+          "canonical_label": "apple__apple_scab",
+          "display_name": "Apple Scab",
+          "pathogen": "Venturia inaequalis",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Olive-green to velvety brown or black spots with feathery edges on leaves."
+        },
+        {
+          "disease_id": "black_rot",
+          "canonical_label": "apple__black_rot",
+          "display_name": "Black Rot (Frogeye Leaf Spot)",
+          "pathogen": "Botryosphaeria obtusa",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Purple circular spots expanding into tan centers with dark purple rings (frogeye)."
+        },
+        {
+          "disease_id": "cedar_apple_rust",
+          "canonical_label": "apple__cedar_apple_rust",
+          "display_name": "Cedar Apple Rust",
+          "pathogen": "Gymnosporangium juniperi-virginianae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Bright yellow-orange spots on upper leaf surfaces; tube-like projections underneath."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "apple__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Glossy green oval leaves with serrated margins without blemishes."
+        }
+      ]
+    },
+    {
+      "crop_id": "banana",
+      "common_name": "Banana",
+      "scientific_name": "Musa acuminata",
+      "family": "Musaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "panama_disease",
+          "canonical_label": "banana__panama_disease",
+          "display_name": "Panama Disease (Fusarium Wilt TR4)",
+          "pathogen": "Fusarium oxysporum f. sp. cubense",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Yellowing of older leaf margins, buckling of petioles, vascular discoloration."
+        },
+        {
+          "disease_id": "black_sigatoka",
+          "canonical_label": "banana__black_sigatoka",
+          "display_name": "Black Sigatoka (Black Leaf Streak)",
+          "pathogen": "Pseudocercospora fijiensis",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Dark reddish-brown to black streaks parallel to veins merging into large necrotic zones."
+        },
+        {
+          "disease_id": "yellow_sigatoka",
+          "canonical_label": "banana__yellow_sigatoka",
+          "display_name": "Yellow Sigatoka",
+          "pathogen": "Pseudocercospora musae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Pale yellow streaks turning into elliptical brown spots with light gray centers."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "banana__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Broad, intact emerald-green banana fronds."
+        }
+      ]
+    },
+    {
+      "crop_id": "mango",
+      "common_name": "Mango",
+      "scientific_name": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "anthracnose",
+          "canonical_label": "mango__anthracnose",
+          "display_name": "Mango Anthracnose",
+          "pathogen": "Colletotrichum gloeosporioides",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Dark brown angular leaf spots coalescing into large dead areas; blossom blight."
+        },
+        {
+          "disease_id": "powdery_mildew",
+          "canonical_label": "mango__powdery_mildew",
+          "display_name": "Powdery Mildew",
+          "pathogen": "Oidium mangiferae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "White flour-like fungal coating on inflorescences, leaves, and tender shoots."
+        },
+        {
+          "disease_id": "dieback",
+          "canonical_label": "mango__dieback",
+          "display_name": "Dieback",
+          "pathogen": "Lasiodiplodia theobromae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Drying and withering of twigs from top downwards with brown discoloration of leaves."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "mango__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Glossy, deep green lanceolate mango leaves without spots."
+        }
+      ]
+    },
+    {
+      "crop_id": "soybean",
+      "common_name": "Soybean",
+      "scientific_name": "Glycine max",
+      "family": "Fabaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "bacterial_blight",
+          "canonical_label": "soybean__bacterial_blight",
+          "display_name": "Bacterial Blight",
+          "pathogen": "Pseudomonas savastanoi pv. glycinea",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Small angular yellow-to-brown spots with translucent water-soaked halos."
+        },
+        {
+          "disease_id": "frogeye_leaf_spot",
+          "canonical_label": "soybean__frogeye_leaf_spot",
+          "display_name": "Frogeye Leaf Spot",
+          "pathogen": "Cercospora sojina",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Circular to angular gray-tan spots with prominent dark reddish-brown borders."
+        },
+        {
+          "disease_id": "rust",
+          "canonical_label": "soybean__rust",
+          "display_name": "Asian Soybean Rust",
+          "pathogen": "Phakopsora pachyrhizi",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Tiny volcano-like tan or reddish-brown lesions with pustules on undersides of leaves."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "soybean__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Uniform green trifoliate soybean leaves."
+        }
+      ]
+    },
+    {
+      "crop_id": "groundnut",
+      "common_name": "Groundnut",
+      "scientific_name": "Arachis hypogaea",
+      "family": "Fabaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "early_leaf_spot",
+          "canonical_label": "groundnut__early_leaf_spot",
+          "display_name": "Early Leaf Spot (Tikka)",
+          "pathogen": "Passalora arachidicola",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Circular reddish-brown spots with distinct bright yellow halos on upper leaf surface."
+        },
+        {
+          "disease_id": "late_leaf_spot",
+          "canonical_label": "groundnut__late_leaf_spot",
+          "display_name": "Late Leaf Spot",
+          "pathogen": "Nothopassalora personata",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Nearly circular dark brown to black spots mostly on lower leaf surface without prominent halo."
+        },
+        {
+          "disease_id": "rust",
+          "canonical_label": "groundnut__rust",
+          "display_name": "Groundnut Rust",
+          "pathogen": "Puccinia arachidis",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Orange-brown pustules predominantly on lower surface, rupturing to expose spores."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "groundnut__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Bright green pinnate groundnut leaves without spots."
+        }
+      ]
+    },
+    {
+      "crop_id": "sugarcane",
+      "common_name": "Sugarcane",
+      "scientific_name": "Saccharum officinarum",
+      "family": "Poaceae",
+      "growth_stages": ["seedling", "vegetative", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "red_rot",
+          "canonical_label": "sugarcane__red_rot",
+          "display_name": "Red Rot",
+          "pathogen": "Colletotrichum falcatum",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Yellowing and withering of third/fourth leaf, red lesions with white cross-bands inside stalk."
+        },
+        {
+          "disease_id": "smut",
+          "canonical_label": "sugarcane__smut",
+          "display_name": "Sugarcane Smut",
+          "pathogen": "Sporisorium scitamineum",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Curved whip-like black sorus structure emerging from terminal shoot."
+        },
+        {
+          "disease_id": "rust",
+          "canonical_label": "sugarcane__rust",
+          "display_name": "Sugarcane Rust",
+          "pathogen": "Puccinia melanocephala",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Small elongated yellowish spots developing into brown-orange pustules parallel to veins."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "sugarcane__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Long vigorous green blade-like cane leaves."
+        }
+      ]
+    },
+    {
+      "crop_id": "coffee",
+      "common_name": "Coffee",
+      "scientific_name": "Coffea arabica",
+      "family": "Rubiaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "leaf_rust",
+          "canonical_label": "coffee__leaf_rust",
+          "display_name": "Coffee Leaf Rust (Roya)",
+          "pathogen": "Hemileia vastatrix",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Yellowish oily spots on upper leaf surface with powdery orange-yellow spore dust underneath."
+        },
+        {
+          "disease_id": "cercospora_leaf_spot",
+          "canonical_label": "coffee__cercospora_leaf_spot",
+          "display_name": "Cercospora Leaf Spot (Brown Eye Spot)",
+          "pathogen": "Cercospora coffeicola",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Circular brown spots with light ash-gray center surrounded by a bright yellow halo."
+        },
+        {
+          "disease_id": "sooty_mold",
+          "canonical_label": "coffee__sooty_mold",
+          "display_name": "Sooty Mold",
+          "pathogen": "Capnodium spp.",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Black velvety superficial fungal film covering leaf surface following insect honeydew."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "coffee__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Glossy, dark green wavy-edged leaves free of lesions or rust pustules."
+        }
+      ]
+    },
+    {
+      "crop_id": "pepper",
+      "common_name": "Pepper",
+      "scientific_name": "Capsicum annuum",
+      "family": "Solanaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "bacterial_spot",
+          "canonical_label": "pepper__bacterial_spot",
+          "display_name": "Bacterial Spot",
+          "pathogen": "Xanthomonas campestris pv. vesicatoria",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Small, water-soaked, blister-like spots turning dark brown with pale centers."
+        },
+        {
+          "disease_id": "anthracnose",
+          "canonical_label": "pepper__anthracnose",
+          "display_name": "Anthracnose",
+          "pathogen": "Colletotrichum coccodes",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Circular sunken lesions on fruits and brown water-soaked leaf spots."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "pepper__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Uniform deep green foliage and erect habit."
+        }
+      ]
+    },
+    {
+      "crop_id": "citrus",
+      "common_name": "Citrus",
+      "scientific_name": "Citrus sinensis",
+      "family": "Rutaceae",
+      "growth_stages": ["vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "canker",
+          "canonical_label": "citrus__canker",
+          "display_name": "Citrus Canker",
+          "pathogen": "Xanthomonas citri subsp. citri",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Raised corky blister-like lesions surrounded by an oily or water-soaked yellow halo."
+        },
+        {
+          "disease_id": "black_spot",
+          "canonical_label": "citrus__black_spot",
+          "display_name": "Citrus Black Spot",
+          "pathogen": "Phyllosticta citricarpa",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Round sunken necrotic lesions with grey centers and raised dark brown margins."
+        },
+        {
+          "disease_id": "greening",
+          "canonical_label": "citrus__greening",
+          "display_name": "Huanglongbing (Citrus Greening)",
+          "pathogen": "Candidatus Liberibacter asiaticus",
+          "pathogen_type": "bacterial",
+          "is_healthy": false,
+          "symptoms": "Asymmetrical blotchy mottle on leaves, yellow shoots, small lopsided bitter fruit."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "citrus__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Smooth, leathery dark-green leaves without mottling or corky pustules."
+        }
+      ]
+    },
+    {
+      "crop_id": "beans",
+      "common_name": "Beans",
+      "scientific_name": "Phaseolus vulgaris",
+      "family": "Fabaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "angular_leaf_spot",
+          "canonical_label": "beans__angular_leaf_spot",
+          "display_name": "Angular Leaf Spot",
+          "pathogen": "Pseudocercospora griseola",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Angular, brown-to-gray lesions strictly delimited by leaf veins."
+        },
+        {
+          "disease_id": "rust",
+          "canonical_label": "beans__rust",
+          "display_name": "Bean Rust",
+          "pathogen": "Uromyces appendiculatus",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Small reddish-brown circular pustules surrounded by pale chlorotic halos on leaves."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "beans__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Clean trifoliate green bean leaves with no veinal necrosis."
+        }
+      ]
+    },
+    {
+      "crop_id": "okra",
+      "common_name": "Okra",
+      "scientific_name": "Abelmoschus esculentus",
+      "family": "Malvaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "yellow_vein_mosaic",
+          "canonical_label": "okra__yellow_vein_mosaic",
+          "display_name": "Yellow Vein Mosaic Virus (YVMV)",
+          "pathogen": "Bhendi yellow vein mosaic virus",
+          "pathogen_type": "viral",
+          "is_healthy": false,
+          "symptoms": "Pronounced yellowing of veins with remaining leaf tissue staying green, creating a network pattern."
+        },
+        {
+          "disease_id": "enation_leaf_curl",
+          "canonical_label": "okra__enation_leaf_curl",
+          "display_name": "Enation Leaf Curl Virus",
+          "pathogen": "Okra enation leaf curl virus",
+          "pathogen_type": "viral",
+          "is_healthy": false,
+          "symptoms": "Upward curling of leaves, twisting of petiole, and warty enations on lower leaf surfaces."
+        },
+        {
+          "disease_id": "powdery_mildew",
+          "canonical_label": "okra__powdery_mildew",
+          "display_name": "Powdery Mildew",
+          "pathogen": "Erysiphe cichoracearum",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "White powdery patches spreading across upper and lower surfaces of leaves."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "okra__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Broad lobed green leaves without veinal chlorosis or leaf curling."
+        }
+      ]
+    },
+    {
+      "crop_id": "pea",
+      "common_name": "Pea",
+      "scientific_name": "Pisum sativum",
+      "family": "Fabaceae",
+      "growth_stages": ["seedling", "vegetative", "flowering", "fruiting", "maturity"],
+      "diseases": [
+        {
+          "disease_id": "powdery_mildew",
+          "canonical_label": "pea__powdery_mildew",
+          "display_name": "Powdery Mildew",
+          "pathogen": "Erysiphe pisi",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "White talcum-like powdery coating over leaves, tendrils, and pods."
+        },
+        {
+          "disease_id": "rust",
+          "canonical_label": "pea__rust",
+          "display_name": "Pea Rust",
+          "pathogen": "Uromyces viciae-fabae",
+          "pathogen_type": "fungal",
+          "is_healthy": false,
+          "symptoms": "Yellowish-orange pustules turning dark brown on both leaf surfaces."
+        },
+        {
+          "disease_id": "downy_mildew",
+          "canonical_label": "pea__downy_mildew",
+          "display_name": "Downy Mildew",
+          "pathogen": "Peronospora viciae",
+          "pathogen_type": "oomycete",
+          "is_healthy": false,
+          "symptoms": "Pale chlorotic patches on upper leaf surface with fluffy grayish-violet felt underneath."
+        },
+        {
+          "disease_id": "healthy",
+          "canonical_label": "pea__healthy",
+          "display_name": "Healthy",
+          "pathogen": null,
+          "pathogen_type": "none",
+          "is_healthy": true,
+          "symptoms": "Vibrant green leaflets and tendrils without powdery coating or rust pustules."
+        }
+      ]
+    }
+  ]
+}
+

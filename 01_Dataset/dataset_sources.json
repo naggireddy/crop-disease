@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "dataset_sources": [
+    {
+      "source_id": "PlantVillage",
+      "env_var": "PLANTVILLAGE_ROOT",
+      "default_relative_path": "data/raw/PlantVillage",
+      "format_type": "nested_crop___disease",
+      "folder_delimiter": "___",
+      "description": "Lab-controlled benchmark dataset of crop leaves with plain backgrounds.",
+      "license": "CC0 Public Domain",
+      "download_url": "https://github.com/spMohanty/PlantVillage-Dataset",
+      "label_mapping_overrides": {
+        "Tomato___Early_blight": "tomato__early_blight",
+        "Tomato___Late_blight": "tomato__late_blight",
+        "Tomato___Leaf_Mold": "tomato__leaf_mold",
+        "Tomato___Bacterial_spot": "tomato__bacterial_spot",
+        "Tomato___Septoria_leaf_spot": "tomato__septoria_leaf_spot",
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "tomato__yellow_leaf_curl_virus",
+        "Tomato___healthy": "tomato__healthy",
+        "Potato___Early_blight": "potato__early_blight",
+        "Potato___Late_blight": "potato__late_blight",
+        "Potato___healthy": "potato__healthy",
+        "Corn_(maize)___Common_rust_": "maize__common_rust",
+        "Corn_(maize)___Northern_Leaf_Blight": "maize__northern_leaf_blight",
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "maize__gray_leaf_spot",
+        "Corn_(maize)___healthy": "maize__healthy",
+        "Apple___Apple_scab": "apple__apple_scab",
+        "Apple___Black_rot": "apple__black_rot",
+        "Apple___Cedar_apple_rust": "apple__cedar_apple_rust",
+        "Apple___healthy": "apple__healthy",
+        "Grape___Black_rot": "grape__black_rot",
+        "Grape___Esca_(Black_Measles)": "grape__esca_black_measles",
+        "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "grape__leaf_blight",
+        "Grape___healthy": "grape__healthy",
+        "Pepper__bell___Bacterial_spot": "pepper__bacterial_spot",
+        "Pepper__bell___healthy": "pepper__healthy",
+        "Soybean___healthy": "soybean__healthy"
+      }
+    },
+    {
+      "source_id": "PlantDoc",
+      "env_var": "PLANTDOC_ROOT",
+      "default_relative_path": "data/raw/PlantDoc",
+      "format_type": "in_the_wild_multileaf",
+      "folder_delimiter": " ",
+      "description": "Field-condition dataset with natural backgrounds and multiple leaves per frame.",
+      "license": "MIT License",
+      "download_url": "https://github.com/pratikkayal/PlantDoc-Dataset",
+      "label_mapping_overrides": {
+        "Tomato Early blight leaf": "tomato__early_blight",
+        "Tomato Septoria leaf spot": "tomato__septoria_leaf_spot",
+        "Tomato leaf bacterial spot": "tomato__bacterial_spot",
+        "Tomato leaf late blight": "tomato__late_blight",
+        "Tomato leaf mosaic virus": "tomato__yellow_leaf_curl_virus",
+        "Tomato leaf yellow virus": "tomato__yellow_leaf_curl_virus",
+        "Tomato leaf": "tomato__healthy",
+        "Potato leaf early blight": "potato__early_blight",
+        "Potato leaf late blight": "potato__late_blight",
+        "Corn leaf blight": "maize__northern_leaf_blight",
+        "Corn rust leaf": "maize__common_rust",
+        "Apple Scab Leaf": "apple__apple_scab",
+        "Apple leaf": "apple__healthy",
+        "Apple rust leaf": "apple__cedar_apple_rust",
+        "Grape leaf": "grape__healthy",
+        "Grape leaf black rot": "grape__black_rot"
+      }
+    },
+    {
+      "source_id": "PlantWild",
+      "env_var": "PLANTWILD_ROOT",
+      "default_relative_path": "data/raw/PlantWild",
+      "format_type": "field_conditions",
+      "folder_delimiter": "__",
+      "description": "Complex in-field agricultural crop dataset with soil, weeds, and varying illumination.",
+      "license": "Research Use Only",
+      "download_url": "https://zenodo.org/record/plantwild",
+      "label_mapping_overrides": {}
+    },
+    {
+      "source_id": "FieldData",
+      "env_var": "FIELD_DATA_ROOT",
+      "default_relative_path": "data/raw/FieldData",
+      "format_type": "canonical_or_custom",
+      "folder_delimiter": "__",
+      "description": "Agronomist-collected field images from farms and mobile app uploads.",
+      "license": "Proprietary / Organization Internal",
+      "download_url": "Internal Agronomist Review Pipeline",
+      "label_mapping_overrides": {}
+    }
+  ],
+  "unmapped_category": "review/unmapped",
+  "supported_extensions": [".jpg", ".jpeg", ".png", ".bmp", ".webp"]
+}
+

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WeatherObservationSchema",
+  "description": "Standardized schema for normalized weather observations at field GPS coordinates.",
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "minimum": -90.0,
+      "maximum": 90.0,
+      "description": "WGS84 latitude coordinate."
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180.0,
+      "maximum": 180.0,
+      "description": "WGS84 longitude coordinate."
+    },
+    "temperature_mean": {
+      "type": "number",
+      "description": "Mean ambient temperature in Celsius over recent 7 days."
+    },
+    "humidity_mean": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "description": "Mean relative humidity percentage over recent 7 days."
+    },
+    "rainfall_7d": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Cumulative precipitation in mm over recent 7 days."
+    },
+    "rainfall_14d": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Cumulative precipitation in mm over recent 14 days."
+    },
+    "source": {
+      "type": "string",
+      "description": "Weather data provider (e.g. Open-Meteo, OpenWeatherMap, Cached, Offline-Fallback)."
+    },
+    "is_available": {
+      "type": "boolean",
+      "description": "Flag indicating whether actual meteorological observations were retrieved."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 UTC timestamp of retrieval."
+    }
+  },
+  "required": [
+    "latitude",
+    "longitude",
+    "temperature_mean",
+    "humidity_mean",
+    "rainfall_7d",
+    "rainfall_14d"
+  ]
+}
+

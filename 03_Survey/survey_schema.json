@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FarmerThreeQuestionSurvey",
+  "description": "Standardized schema for farmer-provided agronomic field symptom survey.",
+  "type": "object",
+  "properties": {
+    "root_condition": {
+      "type": "string",
+      "description": "Condition of root system observed during field inspection.",
+      "enum": ["normal", "discolored", "rotting", "unknown"],
+      "default": "unknown"
+    },
+    "stem_health": {
+      "type": "string",
+      "description": "Health and structural integrity of the plant stem.",
+      "enum": ["healthy", "weak", "lesions_spots", "wilting", "unknown"],
+      "default": "unknown"
+    },
+    "recent_chemical_spray": {
+      "type": "string",
+      "description": "Any chemical or fertilizer treatments applied within past 14 days.",
+      "enum": ["no", "yes_pesticide", "yes_fungicide", "yes_fertilizer", "unknown"],
+      "default": "unknown"
+    },
+    "crop_growth_stage": {
+      "type": "string",
+      "description": "Current agronomic growth stage of the crop.",
+      "enum": ["seedling", "vegetative", "flowering", "fruiting", "maturity", "unknown"],
+      "default": "unknown"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional free-text observations from farmer or field scout.",
+      "maxLength": 500
+    }
+  },
+  "required": [
+    "root_condition",
+    "stem_health",
+    "recent_chemical_spray"
+  ],
+  "additionalProperties": true
+}
+

@@ -1,0 +1,84 @@
+class_id,canonical_label,crop,disease,scientific_name,pathogen_type,is_healthy
+0,rice__bacterial_leaf_blight,rice,bacterial_leaf_blight,Xanthomonas oryzae pv. oryzae,bacterial,False
+1,rice__brown_spot,rice,brown_spot,Bipolaris oryzae,fungal,False
+2,rice__leaf_blast,rice,leaf_blast,Magnaporthe oryzae,fungal,False
+3,rice__sheath_blight,rice,sheath_blight,Rhizoctonia solani,fungal,False
+4,rice__healthy,rice,healthy,Oryza sativa,none,True
+5,wheat__stripe_rust,wheat,stripe_rust,Puccinia striiformis f. sp. tritici,fungal,False
+6,wheat__leaf_rust,wheat,leaf_rust,Puccinia triticina,fungal,False
+7,wheat__powdery_mildew,wheat,powdery_mildew,Blumeria graminis f. sp. tritici,fungal,False
+8,wheat__septoria_leaf_blight,wheat,septoria_leaf_blight,Zymoseptoria tritici,fungal,False
+9,wheat__healthy,wheat,healthy,Triticum aestivum,none,True
+10,maize__common_rust,maize,common_rust,Puccinia sorghi,fungal,False
+11,maize__northern_leaf_blight,maize,northern_leaf_blight,Exserohilum turcicum,fungal,False
+12,maize__gray_leaf_spot,maize,gray_leaf_spot,Cercospora zeae-maydis,fungal,False
+13,maize__healthy,maize,healthy,Zea mays,none,True
+14,cotton__bacterial_blight,cotton,bacterial_blight,Xanthomonas citri subsp. malvacearum,bacterial,False
+15,cotton__leaf_curl_virus,cotton,leaf_curl_virus,Cotton leaf curl virus,viral,False
+16,cotton__target_spot,cotton,target_spot,Corynespora cassiicola,fungal,False
+17,cotton__healthy,cotton,healthy,Gossypium hirsutum,none,True
+18,tomato__early_blight,tomato,early_blight,Alternaria solani,fungal,False
+19,tomato__late_blight,tomato,late_blight,Phytophthora infestans,oomycete,False
+20,tomato__leaf_mold,tomato,leaf_mold,Passalora fulva,fungal,False
+21,tomato__bacterial_spot,tomato,bacterial_spot,Xanthomonas vesicatoria,bacterial,False
+22,tomato__septoria_leaf_spot,tomato,septoria_leaf_spot,Septoria lycopersici,fungal,False
+23,tomato__yellow_leaf_curl_virus,tomato,yellow_leaf_curl_virus,Tomato yellow leaf curl virus,viral,False
+24,tomato__healthy,tomato,healthy,Solanum lycopersicum,none,True
+25,potato__early_blight,potato,early_blight,Alternaria solani,fungal,False
+26,potato__late_blight,potato,late_blight,Phytophthora infestans,oomycete,False
+27,potato__healthy,potato,healthy,Solanum tuberosum,none,True
+28,chilli__anthracnose,chilli,anthracnose,Colletotrichum capsici,fungal,False
+29,chilli__leaf_curl,chilli,leaf_curl,Chilli leaf curl virus,viral,False
+30,chilli__bacterial_spot,chilli,bacterial_spot,Xanthomonas euvesicatoria,bacterial,False
+31,chilli__healthy,chilli,healthy,Capsicum annuum,none,True
+32,grape__black_rot,grape,black_rot,Guignardia bidwellii,fungal,False
+33,grape__esca_black_measles,grape,esca_black_measles,Phaeomoniella chlamydospora,fungal,False
+34,grape__leaf_blight,grape,leaf_blight,Pseudocercospora vitis,fungal,False
+35,grape__healthy,grape,healthy,Vitis vinifera,none,True
+36,apple__apple_scab,apple,apple_scab,Venturia inaequalis,fungal,False
+37,apple__black_rot,apple,black_rot,Botryosphaeria obtusa,fungal,False
+38,apple__cedar_apple_rust,apple,cedar_apple_rust,Gymnosporangium juniperi-virginianae,fungal,False
+39,apple__healthy,apple,healthy,Malus domestica,none,True
+40,banana__panama_disease,banana,panama_disease,Fusarium oxysporum f. sp. cubense,fungal,False
+41,banana__black_sigatoka,banana,black_sigatoka,Pseudocercospora fijiensis,fungal,False
+42,banana__yellow_sigatoka,banana,yellow_sigatoka,Pseudocercospora musae,fungal,False
+43,banana__healthy,banana,healthy,Musa acuminata,none,True
+44,mango__anthracnose,mango,anthracnose,Colletotrichum gloeosporioides,fungal,False
+45,mango__powdery_mildew,mango,powdery_mildew,Oidium mangiferae,fungal,False
+46,mango__dieback,mango,dieback,Lasiodiplodia theobromae,fungal,False
+47,mango__healthy,mango,healthy,Mangifera indica,none,True
+48,soybean__bacterial_blight,soybean,bacterial_blight,Pseudomonas savastanoi pv. glycinea,bacterial,False
+49,soybean__frogeye_leaf_spot,soybean,frogeye_leaf_spot,Cercospora sojina,fungal,False
+50,soybean__rust,soybean,rust,Phakopsora pachyrhizi,fungal,False
+51,soybean__healthy,soybean,healthy,Glycine max,none,True
+52,groundnut__early_leaf_spot,groundnut,early_leaf_spot,Passalora arachidicola,fungal,False
+53,groundnut__late_leaf_spot,groundnut,late_leaf_spot,Nothopassalora personata,fungal,False
+54,groundnut__rust,groundnut,rust,Puccinia arachidis,fungal,False
+55,groundnut__healthy,groundnut,healthy,Arachis hypogaea,none,True
+56,sugarcane__red_rot,sugarcane,red_rot,Colletotrichum falcatum,fungal,False
+57,sugarcane__smut,sugarcane,smut,Sporisorium scitamineum,fungal,False
+58,sugarcane__rust,sugarcane,rust,Puccinia melanocephala,fungal,False
+59,sugarcane__healthy,sugarcane,healthy,Saccharum officinarum,none,True
+60,coffee__leaf_rust,coffee,leaf_rust,Hemileia vastatrix,fungal,False
+61,coffee__cercospora_leaf_spot,coffee,cercospora_leaf_spot,Cercospora coffeicola,fungal,False
+62,coffee__sooty_mold,coffee,sooty_mold,Capnodium spp.,fungal,False
+63,coffee__healthy,coffee,healthy,Coffea arabica,none,True
+64,pepper__bacterial_spot,pepper,bacterial_spot,Xanthomonas campestris pv. vesicatoria,bacterial,False
+65,pepper__anthracnose,pepper,anthracnose,Colletotrichum coccodes,fungal,False
+66,pepper__healthy,pepper,healthy,Capsicum annuum,none,True
+67,citrus__canker,citrus,canker,Xanthomonas citri subsp. citri,bacterial,False
+68,citrus__black_spot,citrus,black_spot,Phyllosticta citricarpa,fungal,False
+69,citrus__greening,citrus,greening,Candidatus Liberibacter asiaticus,bacterial,False
+70,citrus__healthy,citrus,healthy,Citrus sinensis,none,True
+71,beans__angular_leaf_spot,beans,angular_leaf_spot,Pseudocercospora griseola,fungal,False
+72,beans__rust,beans,rust,Uromyces appendiculatus,fungal,False
+73,beans__healthy,beans,healthy,Phaseolus vulgaris,none,True
+74,okra__yellow_vein_mosaic,okra,yellow_vein_mosaic,Bhendi yellow vein mosaic virus,viral,False
+75,okra__enation_leaf_curl,okra,enation_leaf_curl,Okra enation leaf curl virus,viral,False
+76,okra__powdery_mildew,okra,powdery_mildew,Erysiphe cichoracearum,fungal,False
+77,okra__healthy,okra,healthy,Abelmoschus esculentus,none,True
+78,pea__powdery_mildew,pea,powdery_mildew,Erysiphe pisi,fungal,False
+79,pea__rust,pea,rust,Uromyces viciae-fabae,fungal,False
+80,pea__downy_mildew,pea,downy_mildew,Peronospora viciae,oomycete,False
+81,pea__healthy,pea,healthy,Pisum sativum,none,True
+
